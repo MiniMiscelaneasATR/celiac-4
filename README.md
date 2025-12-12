@@ -12,7 +12,7 @@ Esta página es un sitio estático que ofrece recetas 100% sin gluten destinadas
 - **Accesibilidad:** Estructura semántica básica (secciones, navegación, botones); sería recomendable añadir más atributos ARIA y validación de contraste si se desea mejorar accesibilidad.
 
 **Archivos clave:**
-- `index.htm`: página principal con todas las recetas y el layout.
+- `index.html`: página principal con todas las recetas y el layout.
 - `README.md`: este archivo, con descripción y características.
 
 **Sugerencias de despliegue:**
