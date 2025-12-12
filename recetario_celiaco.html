@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recetario Celíaco - Recetas Sin Gluten</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .hero {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 80px 0;
+        }
+        .recipe-card {
+            transition: transform 0.3s;
+            height: 100%;
+        }
+        .recipe-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        .badge-gluten-free {
+            background-color: #28a745;
+        }
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            padding: 30px 0;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">🌾 Recetario Celíaco</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#recetas">Recetas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#sobre">Sobre Nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero text-center">
+        <div class="container">
+            <h1 class="display-4 fw-bold mb-3">Recetas Deliciosas Sin Gluten</h1>
+            <p class="lead mb-4">Descubre recetas saludables y sabrosas aptas para celíacos</p>
+            <a href="#recetas" class="btn btn-light btn-lg">Ver Recetas</a>
+        </div>
+    </section>
+
+    <!-- Recetas Section -->
+    <section id="recetas" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Nuestras Recetas</h2>
+            <div class="row g-4">
+                <!-- Receta 1 -->
+                <div class="col-md-4">
+                    <div class="card recipe-card">
+                        <div class="card-body">
+                            <span class="badge badge-gluten-free mb-2">Sin Gluten</span>
+                            <h5 class="card-title">Pan de Arroz Casero</h5>
+                            <p class="card-text">Un pan esponjoso y delicioso hecho con harina de arroz. Perfecto para el desayuno o la merienda.</p>
+                            <h6 class="mt-3">Ingredientes:</h6>
+                            <ul class="small">
+                                <li>300g harina de arroz</li>
+                                <li>2 huevos</li>
+                                <li>1 taza de leche</li>
+                                <li>1 cucharada de levadura</li>
+                                <li>Sal al gusto</li>
+                            </ul>
+                            <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modal1">Ver Receta Completa</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Receta 2 -->
+                <div class="col-md-4">
+                    <div class="card recipe-card">
+                        <div class="card-body">
+                            <span class="badge badge-gluten-free mb-2">Sin Gluten</span>
+                            <h5 class="card-title">Pizza con Base de Coliflor</h5>
+                            <p class="card-text">Una alternativa saludable y crujiente a la pizza tradicional, con base de coliflor.</p>
+                            <h6 class="mt-3">Ingredientes:</h6>
+                            <ul class="small">
+                                <li>1 coliflor mediana</li>
+                                <li>2 huevos</li>
+                                <li>150g queso mozzarella</li>
+                                <li>Salsa de tomate</li>
+                                <li>Condimentos al gusto</li>
+                            </ul>
+                            <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modal2">Ver Receta Completa</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Receta 3 -->
+                <div class="col-md-4">
+                    <div class="card recipe-card">
+                        <div class="card-body">
+                            <span class="badge badge-gluten-free mb-2">Sin Gluten</span>
+                            <h5 class="card-title">Brownies de Chocolate</h5>
+                            <p class="card-text">Brownies húmedos y chocolatosos hechos con harina de almendras. Nadie notará que son sin gluten.</p>
+                            <h6 class="mt-3">Ingredientes:</h6>
+                            <ul class="small">
+                                <li>200g chocolate negro</li>
+                                <li>150g harina de almendras</li>
+                                <li>3 huevos</li>
+                                <li>100g azúcar</li>
+                                <li>100g mantequilla</li>
+                            </ul>
+                            <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modal3">Ver Receta Completa</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre Nosotros -->
+    <section id="sobre" class="py-5 bg-light">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h2 class="mb-4">Sobre Nosotros</h2>
+                    <p>Somos una comunidad apasionada por crear recetas deliciosas y accesibles para personas con celiaquía. Nuestra misión es demostrar que comer sin gluten no significa sacrificar el sabor.</p>
+                    <p>Todas nuestras recetas están cuidadosamente diseñadas y probadas para garantizar que sean 100% libres de gluten y deliciosas.</p>
+                </div>
+                <div class="col-md-6 text-center">
+                    <div class="p-5 bg-white rounded shadow">
+                        <h3 class="text-primary">🌾</h3>
+                        <h4>100% Sin Gluten</h4>
+                        <p>Todas nuestras recetas son seguras para celíacos</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Contacto</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <form>
+                        <div class="mb-3">
+                            <label for="nombre" class="form-label">Nombre</label>
+                            <input type="text" class="form-control" id="nombre" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="mensaje" class="form-label">Mensaje</label>
+                            <textarea class="form-control" id="mensaje" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Enviar Mensaje</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center">
+        <div class="container">
+            <p class="mb-0">&copy; 2024 Recetario Celíaco. Todas las recetas son libres de gluten.</p>
+            <p class="small mt-2">Hecho con ❤️ para la comunidad celíaca</p>
+        </div>
+    </footer>
+
+    <!-- Modales para recetas completas -->
+    <div class="modal fade" id="modal1" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Pan de Arroz Casero</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <h6>Preparación:</h6>
+                    <ol>
+                        <li>Mezcla todos los ingredientes secos en un bowl</li>
+                        <li>Agrega los huevos y la leche, mezcla bien</li>
+                        <li>Vierte en un molde engrasado</li>
+                        <li>Hornea a 180°C por 40 minutos</li>
+                        <li>Deja enfriar antes de desmoldar</li>
+                    </ol>
+                    <p><strong>Tiempo:</strong> 50 minutos | <strong>Porciones:</strong> 8</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modal2" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Pizza con Base de Coliflor</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <h6>Preparación:</h6>
+                    <ol>
+                        <li>Procesa la coliflor hasta obtener una textura de arroz</li>
+                        <li>Cocina en microondas 5 minutos, deja enfriar</li>
+                        <li>Escurre bien el exceso de agua con un paño</li>
+                        <li>Mezcla con huevos y queso, forma la base</li>
+                        <li>Hornea 20 min a 200°C, agrega toppings y hornea 10 min más</li>
+                    </ol>
+                    <p><strong>Tiempo:</strong> 40 minutos | <strong>Porciones:</strong> 2</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modal3" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Brownies de Chocolate</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <h6>Preparación:</h6>
+                    <ol>
+                        <li>Derrite el chocolate con la mantequilla</li>
+                        <li>Bate los huevos con el azúcar hasta espumar</li>
+                        <li>Incorpora el chocolate derretido</li>
+                        <li>Añade la harina de almendras y mezcla</li>
+                        <li>Hornea a 180°C por 25-30 minutos</li>
+                    </ol>
+                    <p><strong>Tiempo:</strong> 40 minutos | <strong>Porciones:</strong> 12</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
